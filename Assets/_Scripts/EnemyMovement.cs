@@ -9,8 +9,8 @@ public class EnemyMovement : MonoBehaviour
     private void FixedUpdate()
     {
         transform.Translate(Vector2.up * Time.deltaTime * _speed);
-        if (((transform.position.x < 4 && transform.position.x > 1) || (transform.position.x < -1 && transform.position.x > -4))
-        || ((transform.position.y < 4 && transform.position.y > 1) || (transform.position.y < -1 && transform.position.y > -4)))
+        if (((transform.position.x < 5 && transform.position.x > 1) || (transform.position.x < -1 && transform.position.x > -5))
+        || ((transform.position.y < 5 && transform.position.y > 1) || (transform.position.y < -1 && transform.position.y > -5)))
         {
             return;
         }
