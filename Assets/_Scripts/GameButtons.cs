@@ -34,6 +34,11 @@ public class GameButtons : MonoBehaviour
     public void NextLevel()
     {
         GameData.LevelIndex++;
+        if (GameData.UnlockedLevels <= GameData.LevelIndex)
+        {
+            GameData.UnlockedLevels = GameData.LevelIndex;
+        }
+
         SceneManager.LoadScene("Game");
     }
 
