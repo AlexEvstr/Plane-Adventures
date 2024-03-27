@@ -17,7 +17,6 @@ public class PlaneCollision : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 1;
         _currentStars = 0;
         _starsGoal = 9;
     }
